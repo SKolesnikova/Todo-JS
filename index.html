@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <script   src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+
+    <title>Todo</title>
+</head>
+
+<body onload="setFocus()">
+
+<section id="todo">
+
+    <header>
+
+        <h1>todos</h1>
+
+            <input id="new" type="text" class="todoForm" placeholder="What needs to be done?">
+
+    </header>
+
+    <section class="list">
+
+        <ul class="todo-list">
+
+            <li class="todo-element hidden">
+
+                <input type="checkbox">
+
+                <label></label>
+
+                <input class="hidden edit" type="text" >
+
+                <button class="destroy"><i class="fa fa-times"></i></button>
+
+        </li>
+
+        </ul>
+
+    </section>
+
+    <footer>
+
+        <span class="count"></span>
+
+       <ul id="filter">
+
+            <li onclick="showTasks('all')"> All </li>
+            <li onclick="showTasks('completed')"> Completed </li>
+            <li onclick="showTasks('active')"> Active </li>
+
+        </ul>
+
+        <button class="clear">Clear completed</button>
+
+    </footer>
+
+</section>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
