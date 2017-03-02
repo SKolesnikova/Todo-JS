@@ -166,7 +166,6 @@ debugger;
 //удаление всех выполненых задач
 $(document).on('click', 'button.clear', function (){
 
-    // $('li.checked').remove();
     deleteChecked();
     showTasks('all');
 
