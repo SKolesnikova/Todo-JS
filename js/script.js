@@ -86,6 +86,7 @@ function showTasks(mode) {
                     todo.classList.add('checked');
                     todo.querySelector('input[type="checkbox"]').setAttribute('checked', 'true');
                 }
+                rerenderCount();
             }
 
             if (mode == 'completed') {                                                                                  // список выполненых задач
@@ -110,6 +111,7 @@ function showTasks(mode) {
                     todo.querySelector('label').textContent = text.str;
                     var tasksList = document.querySelector('ul.todo-list');
                     tasksList.appendChild(todo);
+                    rerenderCount();
 
                 }
             }
@@ -117,7 +119,7 @@ function showTasks(mode) {
         }
     }
 
-    rerenderCount();
+
 
 }
 
